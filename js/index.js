@@ -3,18 +3,15 @@ const tl = gsap.timeline()
 tl.to(".intro", {
     fontSize: "85px",
     lineHeight: "50px",
-    position: "relative",
-    top: 25,
-    left: 20,
-    width: "415px",
-    height: "125px",
     duration: 2,
     delay: 5,
     ease: 'power4.inOut'
 })
 
-const text = new SplitType('.intro-text', { types: 'words' })
-tl.to(".word", {
+/* tl.to("") */
+
+const text = new SplitType('.hero-text', { types: 'words' })
+tl.to(".hero-text .word", {
     y: 0,
     opacity: 1,
     stagger: .25,
@@ -31,5 +28,5 @@ const id = setInterval(() => {
 }, 125)
 setTimeout(() => {
     clearInterval(id)
-    intro.style.setProperty('font-family', 'DM Serif Display')
+    intro.style.setProperty('font-family', fonts[3])
 }, 4125)
