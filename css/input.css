@@ -29,3 +29,8 @@
 body {
     font-family: 'Inter', sans-serif;
 }
+
+.intro-text .word {
+    transform: translateY(75px);
+    opacity: 0;
+}

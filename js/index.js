@@ -9,13 +9,19 @@ tl.to(".intro", {
     width: "415px",
     height: "125px",
     duration: 2,
-    delay: 6,
+    delay: 5,
     ease: 'power4.inOut'
 })
 
-/* tl.to(".hero", {
-    y: 0
-}) */
+const text = new SplitType('.intro-text', { types: 'words' })
+tl.to(".word", {
+    y: 0,
+    opacity: 1,
+    stagger: .25,
+    delay: .05,
+    duration: .75,
+    ease: 'back.out'
+})
 
 const fonts = ['Cooper', 'Forma', 'Capitolina', 'DM Serif Display']
 let i = 0
@@ -26,4 +32,4 @@ const id = setInterval(() => {
 setTimeout(() => {
     clearInterval(id)
     intro.style.setProperty('font-family', 'DM Serif Display')
-}, 5125)
+}, 4125)
