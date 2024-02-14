@@ -3,6 +3,10 @@ const tl = gsap.timeline()
 tl.to(".intro", {
     fontSize: "85px",
     lineHeight: "50px",
+    width: "350px",
+    height: "110px",
+    top: "25px",
+    left: "20px",
     duration: 2,
     delay: 5,
     ease: 'power4.inOut'
