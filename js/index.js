@@ -2,17 +2,28 @@ const intro = document.querySelector('.intro')
 const tl = gsap.timeline()
 tl.to(".intro", {
     fontSize: "85px",
-    lineHeight: "50px",
     width: "350px",
     height: "110px",
-    top: "25px",
+    top: "33px",
     left: "20px",
     duration: 2,
     delay: 5,
-    ease: 'power4.inOut'
-})
 
-/* tl.to("") */
+    /* duration: .3,
+    delay: 0, */
+
+    ease: "power4.inOut",
+    onComplete() {
+        intro.classList.add('md:text-[85px]', '[font-size:9.25vw]')
+        
+        intro.style.width = 'fit-content'
+        intro.style.height = 'fit-content'
+        intro.style.position = 'relative'
+        intro.style.top = '0'
+        intro.style.left = '0'
+        intro.style.fontSize = ''
+    }
+})
 
 const text = new SplitType('.hero-text', { types: 'words' })
 tl.to(".hero-text .word", {
