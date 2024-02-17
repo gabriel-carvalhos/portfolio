@@ -572,6 +572,10 @@ video {
   margin-inline-start: 2rem;
 }
 
+.ms-7 {
+  margin-inline-start: 1.75rem;
+}
+
 .block {
   display: block;
 }
@@ -582,10 +586,6 @@ video {
 
 .h-dvh {
   height: 100dvh;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .w-full {
@@ -665,6 +665,10 @@ video {
   text-transform: lowercase;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .leading-none {
   line-height: 1;
 }
@@ -702,6 +706,18 @@ video {
   src: url('../fonts/brush-script.otf');
 }
 
+@font-face {
+  font-family: 'Inter';
+
+  src: url('../fonts/inter.ttf');
+}
+
+@font-face {
+  font-family: 'DM Serif Display';
+
+  src: url('../fonts/dm-serif-display.otf');
+}
+
 :root {
   --font: 'Cooper';
 }
@@ -735,6 +751,10 @@ body {
 @media (min-width: 768px) {
   .md\:ms-11 {
     margin-inline-start: 2.75rem;
+  }
+
+  .md\:ms-10 {
+    margin-inline-start: 2.5rem;
   }
 
   .md\:text-8xl {

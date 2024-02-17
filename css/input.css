@@ -22,6 +22,16 @@
     src: url('../fonts/brush-script.otf');
 }
 
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/inter.ttf');
+}
+
+@font-face {
+    font-family: 'DM Serif Display';
+    src: url('../fonts/dm-serif-display.otf');
+}
+
 :root {
     --font: 'Cooper';
 }
