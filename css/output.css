@@ -648,9 +648,13 @@ video {
   text-align: end;
 }
 
-.text-9xl {
-  font-size: 8rem;
-  line-height: 1;
+.text-\[11\.25vw\] {
+  font-size: 11.25vw;
+}
+
+.text-\[11\.25vw\]\/\[\.75\] {
+  font-size: 11.25vw;
+  line-height: .75;
 }
 
 .font-bold {
@@ -659,10 +663,6 @@ video {
 
 .lowercase {
   text-transform: lowercase;
-}
-
-.leading-\[\.75\] {
-  line-height: .75;
 }
 
 .leading-none {
@@ -676,14 +676,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.\[font-size\:11\.25vw\] {
-  font-size: 11.25vw;
-}
-
-.\[font-size\:9\.25vw\] {
-  font-size: 9.25vw;
 }
 
 @font-face {
@@ -723,6 +715,16 @@ body {
   opacity: 0;
 }
 
+.intro.intro-text {
+  font-size: 40px;
+}
+
+@media (min-width: 768px) {
+  .intro.md\:intro-text {
+    font-size: 85px;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:text-7xl {
     font-size: 4.5rem;
@@ -740,8 +742,9 @@ body {
     line-height: 1;
   }
 
-  .md\:text-\[85px\] {
-    font-size: 85px;
+  .md\:text-9xl\/\[\.75\] {
+    font-size: 8rem;
+    line-height: .75;
   }
 }
 
