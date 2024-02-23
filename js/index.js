@@ -45,6 +45,13 @@ tl.to(".hero-text .word", {
     ease: 'back.out'
 })
 
+tl.to(".btn-contact", {
+    opacity: 1,
+    delay: .05,
+    duration: .75,
+    ease: 'back.out'
+})
+
 const fonts = ['Cooper', 'Forma', 'Capitolina', 'DM Serif Display']
 let i = 0
 const id = setInterval(() => {
